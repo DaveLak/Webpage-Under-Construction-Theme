@@ -1,0 +1,31 @@
+{
+  "root": true,
+  "ignorePatterns": ["**/vendor/*.js"],
+  "plugins": ["eslint-plugin-compat"],
+  "env": {
+    "browser": true
+  },
+  "extends": ["eslint:recommended", "plugin:compat/recommended"],
+  "parserOptions": {
+    "ecmaVersion": "latest"
+  },
+  "rules": {
+    "eqeqeq": ["error", "smart"],
+    "guard-for-in": "error",
+    "no-await-in-loop": "error",
+    "no-constant-binary-expression": "error",
+    "no-constructor-return": "error",
+    "no-eval": "error",
+    "no-extend-native": "error",
+    "no-implied-eval": "error",
+    "no-promise-executor-return": "error",
+    "no-return-await": "error",
+    "no-self-compare": "error",
+    "no-unreachable": "error",
+    "no-unreachable-loop": "error",
+    "object-shorthand": "error",
+    "require-atomic-updates": "error",
+    "no-duplicate-imports": "warn",
+    "no-template-curly-in-string": "warn"
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "name": "webpage-under-construction-theme",
+  "version": "1.0.0",
+  "description": "",
+  "license": "ISC",
+  "scripts": {
+    "fix:format": "prettier --write .",
+    "fix:scripts": "eslint --fix \"**/*.{js,jsx,mjs,cjs,ts,tsx,mts,cts}\"",
+    "fix:styles": "stylelint --allow-empty-input --fix \"**/*.css\"",
+    "preinstall": "npx only-allow pnpm",
+    "lint:format": "prettier --check .",
+    "lint:scripts": "eslint --report-unused-disable-directives --max-warnings 0 \"**/*.{js,jsx,mjs,cjs,ts,tsx,mts,cts}\"",
+    "lint:styles": "stylelint --allow-empty-input \"**/*.css\"",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "browserslist": [
+    ">0.3%, defaults"
+  ],
+  "devDependencies": {
+    "eslint": "^8.56.0",
+    "eslint-plugin-compat": "^4.2.0",
+    "prettier": "3.1.1",
+    "prettier-plugin-packagejson": "^2.4.7",
+    "stylelint": "^16.0.2",
+    "stylelint-config-standard": "^35.0.0",
+    "stylelint-gamut": "^1.3.4"
+  },
+  "packageManager": "pnpm@8.12.1"
+}
